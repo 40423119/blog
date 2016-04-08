@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = '40423119'
-SITENAME = '40423119'
-SITEURL = 'http://cad-lab.github.io/manual/'
+SITENAME = '40423119 blog'
+SITEURL = 'http://40423119.github.io/blog/'
 
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
