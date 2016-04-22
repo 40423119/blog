@@ -12,16 +12,16 @@
 <vnodes>
 <v t="amd.20160329124757.1"><vh>跳出 users 目錄</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../</vh>
-<v t="amd.20160329164739.1"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
+<v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
+</v>
+<v t="leo.20160422102843.1"><vh>wordpress</vh>
+<v t="leo.20160422102843.2"><vh>@button new-to-wp</vh></v>
+<v t="leo.20160422102843.3"><vh>@button edit-to-wp</vh></v>
+<v t="leo.20160422102843.4"><vh>@button get-from-wp</vh></v>
 </v>
 <v t="amd.20160329163719.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="leo.20160408112855.1"><vh>@button local pelican</vh></v>
-</v>
-<v t="leo.20160408113932.1" a="E"><vh>wordpress</vh>
-<v t="leo.20160408113932.2"><vh>@button new-to-wp</vh></v>
-<v t="leo.20160408114022.1"><vh>@button edit-to-wp</vh></v>
-<v t="leo.20160408114023.1"><vh>@button get-from-wp</vh></v>
 </v>
 <v t="amd.20160329162138.1" a="E"><vh>設定檔案</vh>
 <v t="leo.20160401105056.1"><vh>共用設定</vh></v>
@@ -31,7 +31,7 @@
 <v t="leo.20160401105400.1"><vh>近端專用</vh></v>
 <v t="leo.20160401105404.1"><vh>@edit local_publishconf.py</vh></v>
 </v>
-<v t="amd.20160329165035.1" a="E"><vh>本地端與遠端共用的設定</vh>
+<v t="amd.20160329165035.1"><vh>本地端與遠端共用的設定</vh>
 <v t="amd.20160329163958.1"><vh>@edit pelicanconf.py</vh></v>
 </v>
 <v t="amd.20160329165054.1" a="E"><vh>配合遠端 disqus 設定</vh>
@@ -87,8 +87,24 @@ g.es("admin pelican 近端執行完畢")
 
 
 </t>
-<t tx="leo.20160408113932.1"></t>
-<t tx="leo.20160408113932.2">@language python
+<t tx="leo.20160415101446.1">@language md
+Title: admin-網際內容管理
+Category: 規劃
+Tags: CADLAB, Ｍanual, MCAD
+Author: 40423119
+@others
+個人網際內容管理
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;a href="http://cms-11311010.rhcloud.com/get_page?heading=head+1"&gt;CMSimply&lt;/a&gt;
+
+&lt;a href="http://40423119.github.io/blog/post/index.html"&gt;Pelican&lt;/a&gt;
+
+&lt;a href="http://wp-11311010.rhcloud.com/"&gt;WordPress&lt;/a&gt;
+</t>
+<t tx="leo.20160422102843.1"></t>
+<t tx="leo.20160422102843.2">@language python
 #new-to-wp button
 #coding: utf-8
 import xmlrpc.client
@@ -168,7 +184,7 @@ c.redraw()
  
 g.es("post_id 為", post_id)
 g.es("已經送出資料!")</t>
-<t tx="leo.20160408114022.1">@language python
+<t tx="leo.20160422102843.3">@language python
 #edit-to-wp
 #coding: utf-8
 import xmlrpc.client
@@ -244,7 +260,7 @@ if status:
     g.es("資料已經更新!")
 else:
     g.es("有問題, 資料沒有更新!")</t>
-<t tx="leo.20160408114023.1">@language python
+<t tx="leo.20160422102843.4">@language python
 #get-from-wp
 #coding: utf-8
 import xmlrpc.client
@@ -311,21 +327,5 @@ p.b = line1 + line2 + line3 + line4 + line5 + post_content + "\n"
 # 因為節點資料更新, commander 必須 redraw
 c.redraw() 
 g.es("資料已經取回")</t>
-<t tx="leo.20160415101446.1">@language md
-Title: admin-網際內容管理
-Category: 規劃
-Tags: CADLAB, Ｍanual, MCAD
-Author: 40423119
-@others
-個人網際內容管理
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;a href="http://cms-11311010.rhcloud.com/get_page?heading=head+1"&gt;CMSimply&lt;/a&gt;
-
-&lt;a href="http://40423119.github.io/blog/post/index.html"&gt;Pelican&lt;/a&gt;
-
-&lt;a href="http://wp-11311010.rhcloud.com/"&gt;WordPress&lt;/a&gt;
-</t>
 </tnodes>
 </leo_file>
