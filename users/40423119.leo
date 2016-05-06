@@ -15,7 +15,7 @@
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
 </v>
-<v t="leo.20160422102843.1"><vh>wordpress</vh>
+<v t="leo.20160422102843.1" a="E"><vh>wordpress</vh>
 <v t="leo.20160422102843.2"><vh>@button new-to-wp</vh></v>
 <v t="leo.20160422102843.3"><vh>@button edit-to-wp</vh></v>
 <v t="leo.20160422102843.4"><vh>@button get-from-wp</vh></v>
@@ -135,7 +135,7 @@ def get_cat_tag_content(data):
 os.environ['TZ'] = 'Asia/Taipei'
  
 #################################
-filepath = "E:/password.txt"
+filepath = "y:/password.txt"
 wordpress = "wp-11311010.rhcloud.com/"
 fo = open(filepath, "r+")
 data = []
@@ -215,7 +215,7 @@ def get_cat_tag_content(data):
 os.environ['TZ'] = 'Asia/Taipei'
  
 #################################
-filepath = "E:/password.txt"
+filepath = "y:/password.txt"
 wordpress = "wp-11311010.rhcloud.com/"
 fo = open(filepath, "r+")
 data = []
@@ -269,7 +269,7 @@ import xmlrpc.client
 import html
  
 #################################
-filepath = "E:/password.txt"
+filepath = "y:/password.txt"
 wordpress = "wp-11311010.rhcloud.com/"
 fo = open(filepath, "r+")
 data = []
@@ -343,14 +343,17 @@ Author: 40423119
 &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"&gt;&lt;/script&gt;
  
 &lt;script&gt;
+//!&lt;--
 window.onload=function(){
 brython(1);
 }
+//--&gt;
 &lt;/script&gt;
  
 &lt;svg width="800" height="600" viewBox="0 0 800 600" id="svgout"&gt;&lt;/svg&gt;
  
 &lt;script type="text/python"&gt;
+#!&lt;--
 from javascript import JSConstructor
 from browser import alert
 from browser import window, document
@@ -401,6 +404,7 @@ c4 = s.circle(25,25,10).attr({ 'fill': "silver", 'stroke': "black", 'strokeWidth
 g4 = s.group(r4,c4).attr({ 'id': 'g4' });
 g4.appendTo( g3 )
 g4.animate( { 'transform' : 'r360,25,25' },4000)
+#--&gt;
 &lt;/script&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -417,13 +421,16 @@ g4.animate( { 'transform' : 'r360,25,25' },4000)
 &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"&gt;&lt;/script&gt;
  
 &lt;script&gt;
+//!&lt;--
 window.onload=function(){
 brython(1);
 }
+//--&gt;
 &lt;/script&gt;
 &lt;svg width="800" height="700" viewBox="0 0 800 700" id="svgout1"&gt;&lt;/svg&gt;
  
 &lt;script type="text/python"&gt;
+#!&lt;--
 from javascript import JSConstructor
 from browser import alert
 from browser import window, document
@@ -471,6 +478,7 @@ document['rect'].bind('click', rtoyellow)
 document['circle'].bind('click', ctogreen)
 document['tux'].bind('mouseover', hoverover)
 document['tux'].bind('mouseleave', hoverout)
+#--&gt;
 &lt;/script&gt;
 </t>
 </tnodes>
